@@ -1,0 +1,54 @@
+########################################
+
+####
+
+#### General Properties
+
+####
+
+
+### Root directory of the installation
+
+root.dir=/opt/microfocus/oo
+
+
+### What to install
+
+install.java=true
+
+install.ras=true
+
+install.central=false
+
+install.docs=false
+
+
+#### Define the Central connection properties - used to connect the RAS to the central
+
+central.url=https://myd-hvm02055.swinfra.net:9048/oo
+
+
+### Specify whether the Central is password protected
+
+central.secured=true
+
+central.username=oo_topology
+
+central.password=Ooadmin123
+
+### Define the connectivity direction of the RAS
+
+register.ras=true
+
+
+### Define whether the RAS requires a SSL user-provided certificate to register
+
+ssl.certificate.type=user-provided
+
+
+### Specify the location of the root certificate to be imported.
+
+ssl.user-provided-root-certificate.location=/tmp/OO-CA-crt.cer
+
+
+ ./uninstall -s ras
